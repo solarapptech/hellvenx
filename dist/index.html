@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css.967bad95.css">
+    <title>HellVen X</title>
+<script src="/css.967bad95.js"></script></head>
+<body>
+
+   <!-- Introducción -->
+
+    <div id="intro">
+    <!-- Logo -->
+    <img src="/logo_pic.5b846256.png" style="position: absolute;width: 260px; z-index: 1;">
+
+    <!-- Typography -->
+    <img src="/typography.fc37c830.png" style="position: absolute;width: 218px;left: 125px;top: 64%; z-index: 1;">
+
+    <!-- Play Button -->
+    <img src="/play_btn.5fea3f68.png" id="startButton" style="position: absolute;width: 206px;left: 130px;top: 78%; z-index: 1;">
+
+    <!-- Wallpaper -->
+    <img src="/wallpaper.50bcd477.png" style="position: absolute;width: 1024px; height:99%; z-index: 0;">
+    </div>
+
+    <!-- Social Links -->
+    <div class="socials">
+    <img src="/youtube_icon.1d29fc7c.png">
+    <img src="/instagram_icon.c2c39b72.png" style="padding-left:8px">
+    <img src="/x_icon.2a5fa36c.png" style="padding-left:8px">
+    <img src="/facebook_icon.e7122e9a.png" style="padding-left:8px">
+    </div>
+
+    <!--Menu-->
+    <img src="/menu_btn.a66aade1.png" id="menu_btn" onclick="toggleDropdown()" class="dropbtn">
+    <img src="/avatar_btn.d12f9038.png" id="avatar_btn" onclick="toggleDropdown2()" class="dropbtn2">
+    
+    
+    <div id="myDropdown" class="dropdown-content">
+    <a href="#">Account</a>
+    <a href="#">Designs</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact us</a>
+    <a href="#">Patch Notes</a>
+    <a href="#">Support</a>
+    </div>
+
+    <!--Avatar-->
+    <div id="myDropdown2" class="dropdown-content2">
+    <a href="#">Username</a>
+
+    <div id="heart_icon">
+    <img src="/heart.4037d902.png"><br>0
+    </div>
+
+    <div id="comment_icon">
+    <img src="/comment.b4ee1b69.png"><br>0
+    </div>
+
+    <div class="counter-row3">
+    <img src="/dress.63a34b80.png"><br><div id="dress_qty">0</div>
+    </div>
+
+    <div class="counter-row4">
+    <img src="/pencil.d0740375.png"><br><div id="edit_qty">0</div>
+    </div>
+
+    <div id="solar_icon">
+    <img src="/solar_coin.ad7f87d6.png"><br>0
+    </div>
+
+    <div class="log"><a href="#">Login</a><a href="#">Register</a></div>
+
+    <div class="back_menu">
+    <img src="/back.995a4e8a.png">
+    </div>
+</div>
+
+    <script>function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function toggleDropdown2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  if (!event.target.matches('.dropbtn2') && !event.target.matches('.dropdown-content2')) {
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    for (var e = 0; e < dropdowns2.length; e++) {
+      var openDropdown2 = dropdowns2[e];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
+      }
+    }
+  }
+};</script>
+
+
+
+    <script src="/phaser.09c160a4.js"></script>
+    <script src="/main.1e43358e.js"> </script>
+
+</body>
+</html>

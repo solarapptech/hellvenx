@@ -1,0 +1,112 @@
+{
+    "frames": [
+        {
+            "filename": "doll_skin9",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin10",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 680,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin11",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 0,
+                "y": 920
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin12",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 680,
+                "y": 920
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin13",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 1360,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin14",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 1360,
+                "y": 920
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin15",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 2040,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doll_skin16",
+            "frame": {
+                "w": 680,
+                "h": 920,
+                "x": 2040,
+                "y": 920
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

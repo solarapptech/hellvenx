@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>HellVen X</title>
+</head>
+<body>
+
+   <!-- Introducción -->
+
+    <div id ="intro">
+    <!-- Logo -->
+    <img src ="dist/assets/web/logo_pic.png" style  ="position: absolute;width: 260px; z-index: 1;">
+
+    <!-- Typography -->
+    <img src= "dist/assets/web/typography.png" style ="position: absolute;width: 218px;left: 125px;top: 64%; z-index: 1;">
+
+    <!-- Play Button -->
+    <img src= "dist/assets/web/play_btn.png" id="startButton" style ="position: absolute;width: 206px;left: 130px;top: 78%; z-index: 1;">
+
+    <!-- Wallpaper -->
+    <img src= "dist/assets/web/wallpaper.png" style ="position: absolute;width: 1024px; height:99%; z-index: 0;">
+    </div>
+
+    <!-- Social Links -->
+    <div class ="socials">
+    <img src= "dist/assets/web/youtube_icon.png">
+    <img src= "dist/assets/web/instagram_icon.png" style ="padding-left:8px">
+    <img src= "dist/assets/web/x_icon.png" style ="padding-left:8px">
+    <img src= "dist/assets/web/facebook_icon.png" style ="padding-left:8px">
+    </div>
+
+    <!--Menu-->
+    <img src = "/dist/assets/web/menu_btn.png" id = "menu_btn" onclick="toggleDropdown()" class="dropbtn">
+    <img src = "/dist/assets/web/avatar_btn.png" id = "avatar_btn" onclick="toggleDropdown2()" class="dropbtn2">
+    
+    
+    <div id="myDropdown" class="dropdown-content">
+    <a href="#">Account</a>
+    <a href="#">Designs</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact us</a>
+    <a href="#">Patch Notes</a>
+    <a href="#">Support</a>
+    </div>
+
+    <!--Avatar-->
+    <div id="myDropdown2" class="dropdown-content2">
+    <a href="#">Username</a>
+
+    <div id="heart_icon">
+    <img src ="dist/assets/web/heart.png"><br>0
+    </div>
+
+    <div id="comment_icon">
+    <img src ="dist/assets/web/comment.png"><br>0
+    </div>
+
+    <div class="counter-row3">
+    <img src ="dist/assets/web/dress.png"><br><div id = "dress_qty">0</div>
+    </div>
+
+    <div class="counter-row4">
+    <img src ="dist/assets/web/pencil.png"><br><div id = "edit_qty">0</div>
+    </div>
+
+    <div id="solar_icon">
+    <img src ="dist/assets/web/solar_coin.png"><br>0
+    </div>
+
+    <div class = "log"><a href="#">Login</a><a href="#">Register</a></div>
+
+    <div class="back_menu">
+    <img src ="dist/assets/web/back.png">
+    </div>
+</div>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function toggleDropdown2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+            
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+        if (!event.target.matches('.dropbtn2') && !event.target.matches('.dropdown-content2')) {
+            var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+            for (var e = 0; e < dropdowns2.length; e++) {
+                var openDropdown2 = dropdowns2[e];
+                if (openDropdown2.classList.contains('show')) {
+                openDropdown2.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+
+
+
+    <script src = "lib/phaser.js"></script>
+    <script src = "src/main.js"> </script>
+
+</body>
+</html>
